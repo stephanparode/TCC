@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* GERAL */
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(pg_inicial/images/fundo.png);
+    margin: 0;
+}
+.interface {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.flex {
+    display: flex;
+}
+
+.inline {
+    display: inline-block;
+}
+
+
+button { 
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+/* HEADER */
+
+header img {
+    width: 150px;
+    height: 50px;
+    margin-top: 25px;
+}
+
+header {
+    background-color: #4B1F6F;
+    width: 100%; 
+    justify-content: space-between;
+    align-content: center;
+}
+
+header nav {
+    margin-left: 800px;
+    padding: 30px;
+}
+
+.login {
+    background-color: #4B1F6F;
+    border: 2px solid #000000; 
+    border-color: white;
+    width: 100px;
+}
+
+.cadastro {
+    background-color: white;
+    color: #4B1F6F;
+    border-color: #4B1F6F;
+    border: 2px solid;
+    margin-left: 20px;
+}
+
+/* SECTION */
+
+section {
+    margin-top: 100px;
+    font-size: x-large;
+}
+
+section .conteudo{
+    max-width: 650px;
+}
+
+section h1, h3 {
+    font-family:'Anton', sans-serif;
+    letter-spacing: 2px;
+    border: none;
+}
+
+.começar {
+    width: 200px;
+    background-color: #4B1F6F;
+    border-color: white;
+    border: 2px solid;
+}
