@@ -9,7 +9,7 @@
 
 body {
     height: 100vh;
-    background-image: url(pg_inicial/images/fundo.png);
+    background-image: url(images/fundo.png);
     margin: 0;
 }
 .interface {
@@ -92,7 +92,8 @@ section h1, h3 {
 
 .começar {
     width: 200px;
-    background-color: #4B1F6F;
+    background-color: yellow;
+    color: #4B1F6F;
     border-color: white;
     border: 2px solid;
 }
