@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section> 
+        <form action="#" method="POST" name="cadastro">
+            <div class="mensagem">
+                <h1> Seja bem vindo ao Planejaí!</h1>
+                <p> Caso já possua uma conta, faça login abaixo: </p>
+                <a href="../login/index.html"> 
+                    <button type="button"> Faça login </button>
+                </a>
+            </div>
+            <div class="formulario">
+            <img src="images/logo.png" alt="logo">
+            <h3> Faça seu cadastro </h3>
+                <div class="inputs"> 
+                    <label for="email"> Nome </label>
+                    <input type="text" name="email" id="email" required placeholder="Digite seu nome">
+                    <label for="senha"> Sobrenome </label>
+                    <input type="text" name="senha" id="senha" required placeholder="Digite seu sobrenome">
+                </div>
+                <div class="inputs"> 
+                    <label for="email"> Endereço de email </label>
+                    <input type="text" name="email" id="email" required placeholder="Digite seu endereço de email">
+                </div>
+                <div class="inputs">
+                    <label for="senha"> Senha de acesso </label>
+                    <input type="password" name="senha" id="senha" required placeholder="Crie uma senha">
+                    <label for="senha"> Confirmar senha </label>
+                    <input type="password" name="senha" id="senha" required placeholder="Confirme sua senha">
+                </div>
+                <div class="submit">
+                    <input type="submit" name="enviar" id="enviar" value="Concluir cadastro">
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
