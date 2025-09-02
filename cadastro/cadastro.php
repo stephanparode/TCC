@@ -1,7 +1,7 @@
 <?php
 session_start(); // Sempre no topo. Inicia a sessão do usuário
 
-include($_SERVER['DOCUMENT_ROOT'].'/tcc/conexao.php'); // Inclui a conexão com o banco
+include('../conexao.php'); // Inclui a conexão com o banco
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") { // Só roda quando o form é enviado
 

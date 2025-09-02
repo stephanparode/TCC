@@ -1,0 +1,74 @@
+<?php
+session_start(); // Inicia a sessão do usuário
+include('../conexao.php'); // Conecta ao banco de dados
+
+$erro = ""; // variável para mensagens de erro
+
+if ($_SERVER["REQUEST_METHOD"] == "POST"){ // só roda quando o form é enviado
+
+    $email = htmlspecialchars(trim($_POST["email"])); // mesma coisa, evita scripts maliciosos
+    $senha = htmlspecialchars(trim($_POST["senha"]));
+
+    // prepara a consulta SQL para buscar o usuário
+    $sql= "SELECT id, nome_usuario, senha FROM usuarios WHERE email = ?"; 
+    $stmt = $conn->prepare($sql); //"empacota" nosso código
+    $stmt->bind_param("s",$email); // vincula o parâmetro email
+    $stmt->execute(); // executa a consulta
+    $result=$stmt->get_result(); // resultado da pesquisa no banco de dados
+
+    if ($result->num_rows === 1){ // verifica se o usuário existe
+        $row = $result->fetch_assoc();
+
+        if (password_verify($senha, $row['senha'])){ // verifica a senha
+            $_SESSION['usuario_id'] = $row['id']; // armazena o id na sessão
+            $_SESSION['usuario_nome'] = $row['nome_usuario']; // armazena o nome na sessão
+
+            header("Location: ../home/home.php"); // redireciona para a home
+            exit();
+        } else {
+            $erro = "Senha incorreta!"; // mensagem caso a senha esteja errada
+        }
+    } else {
+        $erro = "Usuário não encontrado!"; // mensagem caso o email não exista
+    }
+
+    $stmt->close(); // fecha o statement
+    $conn->close(); // fecha a conexão
+}
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section> 
+        <form action="login.php" method="POST" name="login">
+            <img src="images/logo.png" alt="logo">
+            <h3> Faça seu login </h3>
+
+            <!-- Exibe mensagem de erro caso haja -->
+            <?php if (!empty($erro)) : ?>
+                <p class="erro"><?php echo $erro; ?></p>
+            <?php endif; ?>
+
+            <div class="inputs"> 
+                <label for="email"> Endereço de email </label>
+                <input type="email" name="email" id="email" required placeholder="Digite seu endereço de email" value="<?php echo isset($email) ? $email : ''; ?>">
+
+                <label for="senha"> Senha de acesso </label>
+                <input type="password" name="senha" id="senha" required placeholder="Digite sua senha">
+            </div>
+
+            <div class="submit">
+                <input type="submit" name="enviar" id="enviar" value="Iniciar sessão">
+            </div>
+        </form>
+    </section>
+</body>
+</html>

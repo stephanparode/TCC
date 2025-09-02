@@ -69,3 +69,10 @@ img {
     height: 80px;
     width: 200x;
 }
+
+.erro {
+    color: red; /* deixa a mensagem vermelha */
+    font-weight: bold; /* destaca a mensagem */
+    text-align: center; /* centraliza no formulário */
+    margin-bottom: 20px; /* espaço abaixo da mensagem */
+}
