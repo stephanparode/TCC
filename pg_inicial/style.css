@@ -38,6 +38,10 @@ button:hover{
     transform: scale(1.1);
 }
 
+a {
+    text-decoration: none;
+}
+
 /* HEADER */
 
 header img {
@@ -49,12 +53,13 @@ header img {
 header {
     background-color: #4B1F6F;
     width: 100%; 
+}
+
+header .flex {
     justify-content: space-between;
-    align-content: center;
 }
 
 header nav {
-    margin-left: 800px;
     padding: 30px;
 }
 

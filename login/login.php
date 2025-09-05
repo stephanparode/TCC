@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){ // só roda quando o form é enviado
             $_SESSION['usuario_id'] = $row['id']; // armazena o id na sessão
             $_SESSION['usuario_nome'] = $row['nome_usuario']; // armazena o nome na sessão
 
-            header("Location: ../home/home.php"); // redireciona para a home
+            header("Location: ../conteudo/home/home.php"); // redireciona para a home
             exit();
         } else {
             $erro = "Senha incorreta!"; // mensagem caso a senha esteja errada

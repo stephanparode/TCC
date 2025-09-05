@@ -1,0 +1,23 @@
+
+//mudança de cores ao selecionar
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menuItem = document.querySelectorAll('.item-menu'); // cria o array com os elementos da classe
+
+    function selectLink(event) {
+        menuItem.forEach(item => item.classList.remove('ativo')); // remove a classe ativo dos elementos estáticos
+        this.classList.add('ativo'); // adiciona a classe ativo aos elementos selecionados
+    }
+
+    menuItem.forEach(item => item.addEventListener('click', selectLink));
+});
+
+
+//expandir o menu
+
+var btnExp = document.querySelector('#btn-exp')
+var menuSide = document.querySelector('.menu-lateral')
+
+btnExp.addEventListener('click', function(){
+    menuSide.classList.toggle('expandir')
+})

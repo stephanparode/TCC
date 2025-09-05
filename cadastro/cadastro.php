@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // Só roda quando o form é enviado
                 $_SESSION['email_usuario'] = $email;
 
                 // Redirecionar para a página inicial do usuário
-                header("Location: ../home/home.php");
+                header("Location: ../conteudo/home/home.php");
                 exit;
             } else {
                 $erro = "Erro ao cadastrar: " . $stmt->error;
