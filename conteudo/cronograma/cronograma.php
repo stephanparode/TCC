@@ -22,6 +22,10 @@ $nomeUsuario = $_SESSION['usuario_nome'];
 
     <nav class="menu-lateral">
 
+        <div class="imagem">
+            <img src="../imagens/logo2.png" alt="logo" id="logo">
+        </div>
+        
         <div class="btn-expandir">
             <i class="bi bi-list" id="btn-exp"></i>
         </div>

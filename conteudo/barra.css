@@ -7,8 +7,20 @@
     box-sizing: border-box;
 }
 
+.imagem img {
+    width: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-self: center;
+}
+
+.imagem img.expandirlogo {
+    width: 150px;
+    content: url(imagens/logo.png);
+}
+
 body {
-    height: 900vh;
+    height: 100vh;
 }
 
 nav.menu-lateral {
@@ -64,7 +76,7 @@ ul li.item-menu a {
     font-size: 20px;
     padding: 20px 4%;
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     line-height: 40px;
 }
 

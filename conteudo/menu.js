@@ -17,7 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 var btnExp = document.querySelector('#btn-exp')
 var menuSide = document.querySelector('.menu-lateral')
+var imagem = document.querySelector ('#logo')
+var conteudo = document.querySelector ('.conteudo')
 
 btnExp.addEventListener('click', function(){
     menuSide.classList.toggle('expandir')
+    imagem.classList.toggle('expandirlogo')
+    conteudo.classList.toggle('expandir')
 })

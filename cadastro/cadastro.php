@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { // Só roda quando o form é enviado
             <div class="mensagem">
                 <h1> Seja bem-vindo ao Planejaí! </h1>
                 <p> Caso já possua uma conta, faça login abaixo: </p>
-                <a href="../login/index.html">
+                <a href="../login/login.php">
                     <button type="button"> Faça login </button>
                 </a>
             </div>
