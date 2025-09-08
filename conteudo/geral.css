@@ -1,0 +1,35 @@
+
+* {
+  letter-spacing: .3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Conteúdo */
+
+.interface {
+    display: flex;
+}
+
+.conteudo {
+    display: flex;
+    margin-left: 200px;
+    flex:1;
+    transition: .2s;
+    margin-top: 20px;;
+}
+.conteudo.expandir {
+    margin-left: 400px;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section .mensagem > h1 {
+    font-size: 40px;
+}

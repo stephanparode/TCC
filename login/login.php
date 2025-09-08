@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){ // só roda quando o form é enviado
     $senha = htmlspecialchars(trim($_POST["senha"]));
 
     // prepara a consulta SQL para buscar o usuário
-    $sql= "SELECT id, nome_usuario, senha FROM usuarios WHERE email = ?"; 
+    $sql= "SELECT id, nome_usuario, sobrenome_usuario, senha FROM usuarios WHERE email = ?"; 
     $stmt = $conn->prepare($sql); //"empacota" nosso código
     $stmt->bind_param("s",$email); // vincula o parâmetro email
     $stmt->execute(); // executa a consulta
@@ -22,6 +22,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){ // só roda quando o form é enviado
         if (password_verify($senha, $row['senha'])){ // verifica a senha
             $_SESSION['usuario_id'] = $row['id']; // armazena o id na sessão
             $_SESSION['usuario_nome'] = $row['nome_usuario']; // armazena o nome na sessão
+            $_SESSION['usuario_sobrenome'] = $row['sobrenome_usuario'];
+            $_SESSION['usuario_email'] = $row['email'];
 
             header("Location: ../conteudo/home/home.php"); // redireciona para a home
             exit();
