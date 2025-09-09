@@ -1,0 +1,106 @@
+.editarperfil {
+    margin-top: 30px;
+    width: 1200px;
+}
+
+.p1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.superior {
+    display: flex;
+    flex-direction: column;
+}
+
+.superior h1 {
+    font-size: 40px;
+}
+
+.botao button {
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 30px;
+    border: solid 1px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.botao button.salvar {
+    background-color: #9617ea;
+    color: white;
+    transition: .2s;
+}
+
+.botao button.salvar:hover {
+    background-color:#6b07ae;
+}
+
+.botao button.voltar {
+    background-color: white;
+    color: black;
+    transition: .2s;
+}
+
+.botao button.voltar:hover {
+    background-color: black;
+    color: white;
+}
+
+.foto {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.foto i {
+    font-size: 80px;
+    margin-right: 30px;
+    color: gray;
+}
+
+hr {
+    color: rgb(213, 213, 213);
+}
+
+/* Inferior */
+
+.inferior {
+    margin-top: 40px;
+}
+
+.inferior div {
+    padding: 10px 0;
+}
+
+.inferior h1 {
+    font-size: 35px;
+}
+
+.dados {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nomesobrenome {
+    display: flex;
+}
+
+input, select{
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 8px;
+    border: solid 1px;
+    font-size: 18px;
+    width: 1210px;
+}
+
+.nomesobrenome input, select {
+    width: 600px;
+}
+
+label {
+    font-weight: bolder;
+    font-size: 18px;
+}

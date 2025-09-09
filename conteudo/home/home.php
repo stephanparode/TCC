@@ -6,8 +6,8 @@ if (!isset($_SESSION['usuario_id'])){
     exit();
 }
 $nomeUsuario = $_SESSION['usuario_nome'];
-$faculdadeUsuario = "Não escolhida";
-$cursoUsuario = "Não escolhido";
+$faculdadeUsuario = $_SESSION['usuario_nomeuniversidade'];
+$cursoUsuario = $_SESSION['usuario_nomecurso'];
 $notaCorte = "Selecione um curso";
 
 date_default_timezone_set('America/Sao_Paulo');
