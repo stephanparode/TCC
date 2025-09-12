@@ -12,7 +12,7 @@ $notaCorte = "Selecione um curso";
 
 date_default_timezone_set('America/Sao_Paulo');
 $hora=date("H");
-$dataVestibular = new DateTime("2025-11-15");
+$dataVestibular = new DateTime("2025-11-09");
 $dataatual= new Datetime("now");
 $intervalo = $dataatual->diff($dataVestibular);
 $diasRestantes = $intervalo->days;

@@ -1,0 +1,33 @@
+table {
+    height: 500px;
+    width: 1200px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+tr, td, th {
+    border-radius: 10px;
+}
+
+th,.hora {
+    border: none;
+}
+
+.hora {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 80px;
+}
+
+.superior_head {
+     padding: 30px;
+}
+
+.superior_row {
+    margin: 0;
+}
+
+.interativo {
+    padding: 10px;
+}
