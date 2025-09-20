@@ -1,0 +1,112 @@
+table {
+    height: 600px;
+    width: 1200px;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #4B1F6F;
+    color: white;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    table-layout: fixed; /* mantém células proporcionais */
+}
+
+tr, td, th {
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+th, .hora {
+    border: none;
+}
+
+.hora {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.superior_head {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.superior_head .numerodasemana {
+    font-size: 28px;
+    margin: 0 10px;
+}
+
+.superior_row {
+    margin: 0;
+}
+
+.interativo {
+    padding: 4px;
+    background-color: white;
+}
+
+.interativo select, .interativo input {
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box; /* evita expansão extra */
+}
+
+input {
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus {
+    border-color: #640cac;
+    box-shadow: 0 0 5px #640cac;
+}
+
+select {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 4px;
+    text-align: left;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><polygon points='0,0 10,0 5,5' fill='black'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 5px center;
+    background-size: 10px;
+    transition: all 0.2s ease;
+}
+
+select:hover {
+    border-color: #640cac;
+}
+
+#esquerda, #direita {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#esquerda:hover, #direita:hover {
+    transform: scale(1.2);
+}
+
+button {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: white;
+    background-color: #4B1F6F;
+    border: 1px solid #4B1F6F;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #8834cd;
+    transform: scale(1.05);
+}

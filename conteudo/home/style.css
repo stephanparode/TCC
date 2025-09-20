@@ -1,0 +1,127 @@
+
+
+
+/* Informações */
+
+.info {
+  margin-top: 40px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 10px;
+  height: 600px;
+  width: 1200px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Superior */
+
+.curso {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 70%; 
+  max-width: 70%;
+}
+
+.escolhas {
+  display: flex;
+  align-items: center;
+}
+
+.p1 {
+  margin-bottom: 20px;
+}
+
+.p1 > p {
+  font-weight: bolder;
+  color: rgb(177, 182, 187);
+}
+
+.p2 {
+  padding-top: 10px;
+  padding-right: 15px;
+}
+
+.p2 > p {
+  font-size: 20px;
+}
+
+.escolhas button {
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 30px;
+    width: 100px;
+    cursor: pointer;
+    border-color: #37075e;
+    color: #37075e;
+    border: solid 1px;
+    transition: .2s
+}
+
+.linha-vertical {
+  width: 2px;            
+  height: 45px;       
+  background: rgb(207, 207, 207);  
+  margin: 0 20px;   
+}
+
+.escolhas button:hover {
+  background-color:#37075e;
+  border: none;
+  color: white;
+}
+
+.superior {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.relogio {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  flex-direction: row-reverse;
+  padding: 10px;
+}
+
+.relogio i {
+  font-size: 120px;
+  color: #9617ea;
+  margin-left: 30px;
+}
+
+.relogio p {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.diasrestantes {
+  font-size: 45px;
+  color: #9617ea;
+}
+
+/* Intermediário */
+
+.notacorte {
+  background-color: white;
+  max-width: 500px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 20px;
+  border:solid 2px;
+  border-color: rgb(232, 232, 232);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+
+.notacorte h1 {
+  font-size: xx-large;
+}

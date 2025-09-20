@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* GERAL */
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 80px;
+}
+.interface {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.flex {
+    display: flex;
+}
+
+.inline {
+    display: inline-block;
+}
+
+
+button { 
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header img {
+    width: 150px;
+    height: 50px;
+    margin-top: 25px;
+}
+
+header {
+    background-color: #4B1F6F;
+    width: 100%; 
+    position: fixed;  
+    top: 0;          
+    left: 0;
+    z-index: 1000;     
+}
+
+header .flex {
+    justify-content: space-between;
+}
+
+header nav {
+    padding: 30px;
+}
+
+.login {
+    background-color: #4B1F6F;
+    border: 2px solid #000000; 
+    border-color: white;
+    width: 100px;
+}
+
+.cadastro {
+    background-color: white;
+    color: #4B1F6F;
+    border-color: #4B1F6F;
+    border: 2px solid;
+    margin-left: 20px;
+}
+
+/* SECTION */
+
+section.marketing {
+    height: 90vh;
+    font-size: 22px;
+}
+
+
+.fundo {
+        background-image: url(images/fundo.png);
+}
+
+section .conteudo{
+    max-width: 650px;
+    margin-top: 100px;
+}
+
+section.marketing h1, section.marketing h3 {
+    font-family:'Anton', sans-serif;
+    letter-spacing: 2px;
+    border: none;
+}
+
+.começar {
+    width: 200px;
+    background-color: yellow;
+    color: #4B1F6F;
+    border-color: white;
+    border: 2px solid;
+}
+
+/* INFORMAÇÕES */
+
+
+section.infosite .titulo {
+    display: flex;
+    justify-content: center;
+}
+
+section.infosite * {
+    font-family: 'Lato', sans-serif;
+}
+
+.blocotexto {
+    margin-top: 50px;
+    background: #fafafa;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+    word-wrap: break-word;
+    padding: 30px;
+    font-size: 18px;
+}
+
+.infosite h1, .infosite h4, .infosite h3 {
+    color: #7516c9;
+    display: flex;
+    justify-self: center;
+}
+ 
+.infosite p {
+    color: #2e2e2e;
+}
+
+.blocotexto#apresentacao img, .imagem img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #310b53;
+    height: 45vh;
+    margin-top: 50px;
+}
+
+.infooter {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.infooter img  {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.infooter ul {
+     list-style-type: none;
+}
+
+footer .redes {
+    background-color: #a569da;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .redes .icons {
+    font-size: 30px;
+    margin-right: 30px;
+}
+
+footer .redes h4 {
+    margin-left: 30px;
+}
+
+footer h4 {
+    color: white;
+}
+
+.creditos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c0331;
+}
+
+.creditos * {
+    margin-left: 5px;
+    color: #b2b2b2;
+}
+
+.creditos span {
+    color: white;
+    margin: 0;
+}
+
+.blocotexto#como-utilizar-section video {
+    width: 600px;
+    height: 350px;
+}
+ .videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* topicos */
+
+.topicos-tcc {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+
+.topico {
+    background-color: #f3f0fb;
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.topico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.topico h3 {
+    color: #4B1F6F;
+    font-size: 22px;
+    margin-bottom: 15px;
+  
+}
+
+.topico p {
+    color: #2e2e2e;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.blocotexto#tcc {
+    background: #ffffff;
+    padding: 40px;
+    margin-top: 50px;
+    border-radius: 25px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.blocotexto#tcc h2 {
+    text-align: center;
+    color: #7516c9;
+    margin-bottom: 35px;
+}
+
+

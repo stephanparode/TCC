@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.3px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+     scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    transition: 3s;
+}
+
+nav.menu-lateral {
+    overflow: hidden;
+    transition: .5s;
+    z-index: 100;
+}
+
+header {
+    color: white;
+    background-color: #7516c9;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+header h1 {
+    letter-spacing: 8px;
+}
+
+
+.conteudo {
+    flex: 1;
+    margin-left: 260px;
+    padding: 100px 20px 20px; 
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.imagensinfo {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagens1, .imagens2 {
+    display: flex;
+    align-items: flex-end;
+    width: 400px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    font-size: 25px;
+    justify-content: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.imagens1:hover,.imagens2:hover {
+    box-shadow: #333;
+    transform: scale(1.05);
+}
+
+.imagens1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.186), rgba(0, 0, 0, 0.274)), url(images/inscricao.png);
+}
+
+.imagens2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.186), rgba(0, 0, 0, 0.274)), url(images/estudos.png);
+}
+
+.section-texto {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto 80px;
+    padding: 40px;
+    background: #fafafa;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+    word-wrap: break-word;
+}
+
+.bloco-texto {
+    line-height: 1.8;
+    color: #333;
+}
+
+.bloco-texto h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #7516c9;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.bloco-texto h3 {
+    font-size: 24px;
+    margin: 25px 0 15px;
+    color: #444;
+    border-left: 6px solid #7516c9;
+    padding-left: 12px;
+}
+
+.bloco-texto p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.bloco-texto ul {
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+.bloco-texto ul li {
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+.bloco-texto strong {
+    color: #7516c9;
+}
+
+
+
+.conteudo.expandir * {
+    max-width: 300vh;
+}
+
+section.descricao {
+    margin: 40px;
+    display: flex;
+    justify-content: flex-start;
+    background: #fafafa;
+    border-radius: 20px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+    word-wrap: break-word;
+    width: 900px;
+}
+
+div.desc {
+    max-width: 700px;
+    font-size: 18px;
+    color: #7516c9;
+    padding: 40px;
+}
+
+#iconeinfo {
+    margin: 20px;
+    color: #7516c9;
+    font-size: 20px;
+}

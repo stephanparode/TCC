@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.imagem img {
+    width: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-self: center;
+}
+
+.imagem img.expandirlogo {
+    width: 150px;
+    content: url(imagens/logo.png);
+}
+
+body {
+    height: 100vh;
+}
+
+nav.menu-lateral {
+    width: 90px;
+    height: 100%;
+    background: linear-gradient(180deg, #37075e 0%, #4a1d72 50%, #633089 100%);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0  #9617ea;
+
+    position: fixed;
+    top: 0;
+    left: 0; /* Fixa o menu na tela */
+    overflow: hidden; /* Esconde as letras */
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+} /* classe do js */
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 2px;
+}
+
+.btn-expandir > i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+
+ul li.item-menu {
+    transition: .5s;
+}
+
+ul li.ativo {
+    background-color: #9617ea;
+} /* classe do js */
+
+ul li.item-menu:hover{
+    background-color: #9617ea;
+}
+
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 15px;
+    line-height: 40px;
+}
+
+
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+}
+
+
+ul li.item-menu a .icon > i {
+    font-size: 30px;
+    margin-left: 10px;
+}

@@ -1,0 +1,20 @@
+section {
+    margin: 0 200px;
+    max-width: 100vh;
+}
+
+
+.materia:hover {
+    border: 1px solid;
+    border-color: #7048e8;
+}
+
+section h1 {
+    font-size: 40px;
+    margin-left: 13px;
+}
+
+.txtmateria {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,36 @@
+.materia {
+    height: 160px;
+    width: 280px;
+    padding: 15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-radius: 15px;
+    font-weight: bolder;
+    font-size: 26px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.desc {
+    font-size: 18px;
+    font-weight: normal;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#matematica { background: #4dabf7; }
+    #biologia { background: #38d9a9; }
+    #fisica { background: #20c997; }
+    #quimica { background: #0ca678; }
+    #literatura { background: #9775fa; }
+    #portugues { background: #845ef7; }
+    #redacao { background: #7048e8; }
+    #filosofia { background: #ff6b6b; }
+    #geografia { background: #f76707; }
+    #historia { background: #f59f00; }
+    #sociologia { background: #d6336c; }
+    #plataforma { background: #fab005; }

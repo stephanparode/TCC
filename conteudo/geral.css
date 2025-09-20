@@ -1,0 +1,48 @@
+
+* {
+  letter-spacing: .3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Conteúdo */
+
+.interface {
+    display: flex;
+}
+
+
+section, header {
+    margin: 0 auto;
+    transition: 2s;
+}
+.conteudo {
+    display: flex;
+    flex:1;
+    transition: .5s;
+    margin-top: 20px;
+}
+.conteudo.expandir {
+    margin-left: 300px;
+    transition: .5s;
+}
+
+.conteudo * {
+    transition: .5s;
+}
+
+.conteudo.expandir * {
+    max-width: 150vh;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section .mensagem > h1 {
+    font-size: 40px;
+}
