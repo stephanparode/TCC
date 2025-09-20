@@ -2,7 +2,6 @@
 session_start();
 include('../../conexao.php');
 
-// Redireciona se não estiver logado
 if (!isset($_SESSION['usuario_id'])) {
     header("Location: ../../login/login.php");
     exit();
@@ -10,7 +9,6 @@ if (!isset($_SESSION['usuario_id'])) {
 
 $id_usuario = $_SESSION['usuario_id'];
 
-// Função para atualizar sessão
 function atualizarSessao($conn, $usuario_id) {
     $sql = "SELECT nome_usuario, sobrenome_usuario, email, id_curso FROM usuarios WHERE id=?";
     $stmt = $conn->prepare($sql);
@@ -54,17 +52,17 @@ function atualizarSessao($conn, $usuario_id) {
     $stmt->close();
 }
 
-// Inicializa variáveis de sessão
+
 $nomeUsuario = $_SESSION['usuario_nome'];
 $sobrenomeUsuario = $_SESSION['usuario_sobrenome'];
 $emailUsuario = $_SESSION['usuario_email'];
 $cursoUsuario = isset($_SESSION['usuario_curso']) ? $_SESSION['usuario_curso'] : "";
 
-// Buscar universidades
+
 $sqluni = "SELECT id_uni, nome_uni FROM universidade ORDER BY nome_uni";
 $resultuni = $conn->query($sqluni);
 
-// Processar formulário
+
 $mensagem = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nomeAtualizado = htmlspecialchars(trim($_POST["nome"]));
@@ -159,7 +157,7 @@ $conn->close();
                         <div class="p1">
                             <h1>Editar Perfil</h1>
                             <div class="botao">
-                                <a href="">
+                                <a href="../home/home.php">
                                     <button type="button" class="voltar">Voltar</button>
                                 </a>
                                 <button type="submit" class="salvar">Salvar alterações</button>
@@ -218,7 +216,6 @@ $conn->close();
 
 <script src="../menu.js"></script>
 <script>
-// Função AJAX para carregar cursos
 document.getElementById('universidade').addEventListener('change', function() {
     var idUni = this.value;
     var selectCursos = document.getElementById('cursos');

@@ -1,31 +1,49 @@
 <?php
 session_start();
+include('../../conexao.php'); 
 
 if (!isset($_SESSION['usuario_id'])){
     header("Location: ../../login/login.php");
     exit();
 }
+
 $nomeUsuario = $_SESSION['usuario_nome'];
 $faculdadeUsuario = $_SESSION['usuario_nomeuniversidade'];
 $cursoUsuario = $_SESSION['usuario_nomecurso'];
 $notaCorte = "Selecione um curso";
 
+
+if (!empty($cursoUsuario)) {
+    $sql = "SELECT nota_corte FROM curso WHERE nome_curso = ? AND id_universidade = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("si", $cursoUsuario, $_SESSION['usuario_universidade']);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    if ($result->num_rows === 1) {
+        $row = $result->fetch_assoc();
+        $notaCorte = $row['nota_corte'];
+    }
+    $stmt->close();
+}
+
+$conn->close();
+
 date_default_timezone_set('America/Sao_Paulo');
-$hora=date("H");
+$hora = date("H");
 $dataVestibular = new DateTime("2025-11-09");
-$dataatual= new Datetime("now");
+$dataatual = new DateTime("now");
 $intervalo = $dataatual->diff($dataVestibular);
 $diasRestantes = $intervalo->days;
 
-if ($hora>=6 && $hora<=12) {
-    $saudacao="Bom dia";
-} else if ($hora>=13 && $hora<=17){
-    $saudacao="Boa tarde";
+if ($hora >= 6 && $hora <= 12) {
+    $saudacao = "Bom dia";
+} else if ($hora >= 13 && $hora <= 17){
+    $saudacao = "Boa tarde";
 } else {
-    $saudacao="Boa noite";
+    $saudacao = "Boa noite";
 }
-
 ?>
+
 
 
 <!DOCTYPE html>
