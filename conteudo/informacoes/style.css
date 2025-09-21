@@ -31,25 +31,11 @@ body {
 nav.menu-lateral {
     overflow: hidden;
     transition: .5s;
-    z-index: 100;
+    z-index: 1000;
 }
 
 header {
-    color: white;
-    background-color: #7516c9;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 99;
-}
-
-header h1 {
-    letter-spacing: 8px;
 }
 
 

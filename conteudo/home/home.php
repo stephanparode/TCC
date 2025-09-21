@@ -11,10 +11,15 @@ $nomeUsuario = $_SESSION['usuario_nome'];
 $faculdadeUsuario = $_SESSION['usuario_nomeuniversidade'];
 $cursoUsuario = $_SESSION['usuario_nomecurso'];
 $notaCorte = "Selecione um curso";
+$peso_red = "";
+$peso_mat = "";
+$peso_ling = "";
+$peso_hum = "" ;
+$peso_cienc = "";
 
 
 if (!empty($cursoUsuario)) {
-    $sql = "SELECT nota_corte FROM curso WHERE nome_curso = ? AND id_universidade = ?";
+    $sql = "SELECT nota_corte, peso_mat, peso_hum, peso_cienc, peso_red, peso_ling FROM curso WHERE nome_curso = ? AND id_universidade = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("si", $cursoUsuario, $_SESSION['usuario_universidade']);
     $stmt->execute();
@@ -22,6 +27,11 @@ if (!empty($cursoUsuario)) {
     if ($result->num_rows === 1) {
         $row = $result->fetch_assoc();
         $notaCorte = $row['nota_corte'];
+        $peso_red = $row['peso_red'];
+        $peso_mat = $row['peso_mat'];
+        $peso_ling = $row['peso_ling'];
+        $peso_hum = $row['peso_hum'];
+        $peso_cienc = $row['peso_cienc'];
     }
     $stmt->close();
 }
@@ -56,9 +66,25 @@ if ($hora >= 6 && $hora <= 12) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../geral.css">
+    <link rel="stylesheet" href="../header.css">
 </head>
+
 <body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-area">
+                <h1 class="titulo-header"> Home </h1>
+            </div>
+            <div class="usuario-area">
+                <span class="boas-vindas">Olá, <?php echo $nomeUsuario; ?> 👋</span>
+                <a href="../../login/logout.php" class="btn-logout">
+                    <i class="bi bi-box-arrow-right"></i> Sair
+                </a>
+            </div>
+        </div>
+    </header>
     <div class="interface">
+
         <nav class="menu-lateral">
 
             <div class="imagem">
@@ -147,9 +173,49 @@ if ($hora >= 6 && $hora <= 12) {
                         </div>
                     </div>
                     <div class="intermediario">
-                        <div class="notacorte">
-                            <label for="nota"> Nota de corte </label>
-                            <h1> <?php echo "$notaCorte"?>
+                        <div class="esquerda">
+                            <div class="notacorte">
+                                <label for="nota"> Nota de corte </label>
+                                <h1> <?php echo "$notaCorte"?> </h1>
+                            </div>
+                            <div class="categoria" id="redacao">
+                                <h3> <i class="bi bi-star-fill"></i> Peso <?php echo "$peso_red" ?> </h3>
+                                <h2> Redação </h2>
+                                <p> É um dos pontos mais importantes do ENEM. O candidato deve produzir um texto dissertativo-argumentativo
+                                    sobre um tema de relevância social, apresentando uma proposta de intervenção viável e respeitando os 
+                                    direitos humanos.</p>
+                                <a href="../disciplinas/materias/redacao.php"> <button> Estude redação </button></a>
+                            </div>
+                        </div>
+                        <div class="direita">
+                            <div class="dupla">
+                                <div class="categoria" id="matematica">
+                                    <h3> <i class="bi bi-star-fill"></i> Peso <?php echo "$peso_mat" ?> </h3>
+                                    <h2> Matemática  </h2>
+                                    <p> Avalia o raciocínio lógico e a capacidade de resolver problemas práticos. Mais do que decorar fórmulas, é preciso interpretar gráficos, tabelas e aplicar conceitos em situações do cotidiano.</p>
+                                    <a href="../disciplinas/materias/matematica.php"> <button> Estude matemática </button></a>
+                                </div>
+                                <div class="categoria" id="linguagens">
+                                    <h3> <i class="bi bi-star-fill"></i> Peso <?php echo "$peso_ling" ?> </h3>
+                                    <h2> Linguagens </h2>
+                                    <p> Envolve interpretação de textos, literatura, artes, língua estrangeira (inglês ou espanhol) e até temas ligados à comunicação. O objetivo é analisar como o estudante compreende e utiliza a linguagem para construir sentido.</p>
+                                    <a href="../disciplinas/materias/portugues.php"> <button> Estude português </button></a>
+                                </div>
+                            </div>
+                            <div class="dupla">
+                                <div class="categoria" id="natureza">
+                                    <h3> <i class="bi bi-star-fill"></i> Peso <?php echo "$peso_cienc" ?> </h3>
+                                    <h2> Ciências da Natureza </h2>
+                                    <p> Reúne questões de química, física e biologia. A prova cobra tanto conteúdos teóricos quanto aplicações em situações reais, exigindo visão crítica e interdisciplinar.</p>
+                                    <a href="../disciplinas/materias/biologia.php"> <button> Estude biologia </button></a>
+                                </div>
+                                <div class="categoria" id="humanas">
+                                    <h3> <i class="bi bi-star-fill"></i> Peso <?php echo "$peso_hum" ?> </h3>
+                                    <h2> Ciências Humanas  </h2>
+                                    <p> Abrange história, geografia, filosofia e sociologia. O foco está em interpretar contextos sociais, políticos, econômicos e culturais, relacionando passado e presente para compreender a sociedade.</p>
+                                    <a href="../disciplinas/materias/historia.php"> <button> Estude história </button></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

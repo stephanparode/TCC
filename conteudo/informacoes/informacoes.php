@@ -19,8 +19,23 @@ $nomeUsuario = $_SESSION['usuario_nome'];
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../geral.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../header.css">
 </head>
 <body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-area">
+                <h1 class="titulo-header"> Informações </h1>
+            </div>
+            <div class="usuario-area">
+                <span class="boas-vindas">Olá, <?php echo $nomeUsuario; ?> 👋</span>
+                <a href="../../login/logout.php" class="btn-logout">
+                    <i class="bi bi-box-arrow-right"></i> Sair
+                </a>
+            </div>
+        </div>
+    </header>
     <div class="interface">
         <nav class="menu-lateral">
             <div class="imagem">
@@ -43,10 +58,6 @@ $nomeUsuario = $_SESSION['usuario_nome'];
 
 
         <div class="conteudo">
-            <header>
-                <h1>INFORMAÇÕES</h1>
-            </header>
-
             <section class="descricao">
                 <i class="bi bi-info-circle" id="iconeinfo"></i>
                 <div class="desc">

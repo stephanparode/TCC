@@ -5,10 +5,10 @@
 
 .info {
   margin-top: 40px;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(247, 247, 247);
   border-radius: 10px;
-  height: 600px;
   width: 1200px;
+  height: 930px;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -46,7 +46,7 @@
   font-size: 20px;
 }
 
-.escolhas button {
+button {
     padding: 5px;
     font-size: 18px;
     border-radius: 30px;
@@ -108,8 +108,8 @@
 
 .notacorte {
   background-color: white;
-  max-width: 500px;
-  height: 100px;
+  width: 500px;
+  height: 140px;
   padding: 20px;
   border-radius: 20px;
   border:solid 2px;
@@ -123,5 +123,90 @@
 
 
 .notacorte h1 {
-  font-size: xx-large;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.categoria {
+  max-width: 280px;
+  font-size: 18px;
+  background-color: rgb(238, 238, 238);
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: rgb(232, 232, 232);
+  margin: 20px 0;
+}
+
+.categoria#matematica, .categoria#linguagens {
+  margin: 0;
+}
+
+.categoria#redacao {
+  max-width: 500px;
+  height: 465px;
+  background-color: white;
+}
+
+.categoria#redacao h3{
+  background-color:  rgb(247, 247, 247);
+}
+
+.categoria h3 {
+  background-color:  rgb(211, 211, 211);
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 5px;
+  width: 90px;
+  font-weight: normal;
+}
+
+.categoria h3 i {
+  color:#5e129d;
+}
+
+.categoria h2 {
+  margin-bottom: 30px;
+}
+
+.categoria p {
+  margin-bottom: 10px;
+}
+
+.categoria button {
+  width: 180px;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  width: 160px;
+  background-color:#37075e;
+  align-self: flex-end;
+}
+
+.categoria#redacao button {
+  width: 180px;
+  font-size: 18px;
+  padding: 5px;
+  color: white;
+  background-color:#37075e;
+  align-self: flex-end;
+}
+
+.categoria#redacao p {
+  margin-bottom: 80px;
+}
+
+.categoria button:hover, .categoria#redacao button:hover {
+  background-color: #5e129d;
+}
+
+.intermediario {
+  display: flex;
+  gap: 20px;
+}
+
+
+.dupla {
+    display: flex;
+    gap: 20px;
 }

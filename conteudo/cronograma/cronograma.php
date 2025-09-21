@@ -94,10 +94,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['materia'])) {
 <link rel="stylesheet" href="../barra.css">
 <link rel="stylesheet" href="../geral.css">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../header.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
+    <!-- HEADER -->
+<header class="header">
+    <div class="header-container">
+        <div class="logo-area">
+            <h1 class="titulo-header">Cronograma de Estudos</h1>
+        </div>
+        <div class="usuario-area">
+            <span class="boas-vindas">Olá, <?php echo $nomeUsuario; ?> 👋</span>
+            <a href="../../login/logout.php" class="btn-logout">
+                <i class="bi bi-box-arrow-right"></i> Sair
+            </a>
+        </div>
+    </div>
+</header>
+
 <div class="interface">
+    
 <nav class="menu-lateral">
     <div class="imagem"><img src="../imagens/logo2.png" alt="logo" id="logo"></div>
     <div class="btn-expandir"><i class="bi bi-list" id="btn-exp"></i></div>
@@ -111,7 +128,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['materia'])) {
     </ul>
 </nav>
 
-<div class="conteudo">
+<div class="conteudo">  
+
     <section class="section">    
         <div class="tabela">
             <form action="cronograma.php" method="POST" id="formCronograma">

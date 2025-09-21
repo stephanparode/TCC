@@ -1,0 +1,85 @@
+.header {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(90deg, #37075e, #4a1d72, #633089);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    top: 0;
+    left: 90px; /* alinhado com o menu fechado */
+    transition: .5s;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+nav.menu-lateral.expandir ~ .header {
+    left: 300px; /* acompanha expansão do menu */
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
+}
+
+.titulo-header {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+.usuario-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.usuario-area .boas-vindas {
+    font-size: 16px;
+}
+
+.usuario-area .btn-logout {
+    padding: 6px 15px;
+    border-radius: 20px;
+    background: #9617ea;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #9617ea;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.usuario-area .btn-logout:hover {
+    background: white;
+    color: #9617ea;
+    transform: scale(1.05);
+}
+
+
+.titulo-header.expandir {
+    margin-left: 200px;
+}
