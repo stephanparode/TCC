@@ -136,8 +136,8 @@ $conn->close();
             </li>
             <li class="item-menu">
                 <a href="../flashcards/flashcards.php">
-                    <span class="icon"><i class="bi bi-envelope-paper-fill"></i></span>
-                    <span class="txt-link">Flashcards</span>
+                    <span class="icon"><i class="bi bi-mortarboard-fill"></i></span>
+                    <span class="txt-link">Cultura </span>
                 </a>
             </li>
             <li class="item-menu ativo">

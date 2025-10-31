@@ -19,7 +19,7 @@ $nomeUsuario = $_SESSION['usuario_nome'];
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../barra.css">
     <link rel="stylesheet" href="materia.css">
-    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../../header.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
@@ -78,8 +78,8 @@ $nomeUsuario = $_SESSION['usuario_nome'];
 
             <li class="item-menu">
                 <a href="../flashcards/flashcards.php">
-                    <span class="icon"> <i class="bi bi-envelope-paper-fill"></i></span>
-                    <span class="txt-link"> Flashcards </span>
+                    <span class="icon"> <i class="bi bi-mortarboard-fill"></i></span>
+                    <span class="txt-link"> Cultura </span>
                 </a>
             </li>
 
@@ -93,7 +93,7 @@ $nomeUsuario = $_SESSION['usuario_nome'];
         </ul>
     </nav>
     <div class="conteudo">
-    <section>
+    <section class="section">
         <h1> Estudar por matérias </h1>
         <div class="tabela" cellspacing="10px">
             <table>
@@ -236,6 +236,7 @@ $nomeUsuario = $_SESSION['usuario_nome'];
                     </a>
                 </tr>
             </table>
+    </section>
 
 </div>
 

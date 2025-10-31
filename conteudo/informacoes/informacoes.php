@@ -19,7 +19,7 @@ $nomeUsuario = $_SESSION['usuario_nome'];
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../geral.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../../header.css">
 </head>
 <body>
 
@@ -51,7 +51,7 @@ $nomeUsuario = $_SESSION['usuario_nome'];
                 <li class="item-menu"><a href="../cronograma/cronograma.php"><span class="icon"><i class="bi bi-calendar-check-fill"></i></span><span class="txt-link">Cronograma</span></a></li>
                 <li class="item-menu"><a href="../disciplinas/disciplinas.php"><span class="icon"><i class="bi bi-book-half"></i></span><span class="txt-link">Disciplinas</span></a></li>
                 <li class="item-menu ativo"><a href="#"><span class="icon"><i class="bi bi-info-circle-fill"></i></span><span class="txt-link">Informações</span></a></li>
-                <li class="item-menu"><a href="../flashcards/flashcards.php"><span class="icon"><i class="bi bi-envelope-paper-fill"></i></span><span class="txt-link">Flashcards</span></a></li>
+                <li class="item-menu"><a href="../flashcards/flashcards.php"><span class="icon"><i class="bi bi-mortarboard-fill"></i></span><span class="txt-link"> Cultura </span></a></li>
                 <li class="item-menu"><a href="../perfil/perfil.php"><span class="icon"><i class="bi bi-person-bounding-box"></i></span><span class="txt-link">Meu Perfil</span></a></li>
             </ul>
         </nav>
@@ -67,7 +67,8 @@ $nomeUsuario = $_SESSION['usuario_nome'];
                     </p>
                 </div>
             </section>
-            <section class="section-imagens">
+            <section class="section">
+            <div class="section-imagens">
                 <div class="imagensinfo">
                     <a href="#enem">
                         <div class="imagens1"><h4>ENEM, inscrição e datas</h4></div>
@@ -76,7 +77,7 @@ $nomeUsuario = $_SESSION['usuario_nome'];
                     <div class="imagens2"><h4>Dicas de estudo</h4></div>
                     </a>
                 </div>
-            </section>
+            </div>
             <section class="section-texto" id="enem">
                 <div class="bloco-texto">
                     <h2>ENEM, inscrição e datas</h2>
@@ -153,7 +154,7 @@ $nomeUsuario = $_SESSION['usuario_nome'];
                     </ul>
                 </div>
             </section>
-
+        </section>
         </div>
     </div>
 

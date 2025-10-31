@@ -86,7 +86,7 @@ $nomeUsuario = $_SESSION['usuario_nome'];
 
                 <li class="item-menu">
                     <a href="../../flashcards/flashcards.php">
-                        <span class="icon"><i class="bi bi-envelope-paper-fill"></i></span>
+                        <span class="icon"><i class="bi bi-mortarboard-fill"></i></span>
                         <span class="txt-link">Flashcards</span>
                     </a>
                 </li>

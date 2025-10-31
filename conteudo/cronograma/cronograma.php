@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['materia'])) {
 <link rel="stylesheet" href="../barra.css">
 <link rel="stylesheet" href="../geral.css">
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="../header.css">
+<link rel="stylesheet" href="../../header.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
@@ -123,7 +123,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['materia'])) {
         <li class="item-menu ativo"><a href="#"><span class="icon"><i class="bi bi-calendar-check-fill"></i></span><span class="txt-link"> Cronograma </span></a></li>
         <li class="item-menu"><a href="../disciplinas/disciplinas.php"><span class="icon"><i class="bi bi-book-half"></i></span><span class="txt-link"> Disciplinas </span></a></li>
         <li class="item-menu"><a href="../informacoes/informacoes.php"><span class="icon"><i class="bi bi-info-circle-fill"></i></span><span class="txt-link"> Informações </span></a></li>
-        <li class="item-menu"><a href="../flashcards/flashcards.php"><span class="icon"><i class="bi bi-envelope-paper-fill"></i></span><span class="txt-link"> Flashcards </span></a></li>
+        <li class="item-menu"><a href="../flashcards/flashcards.php"><span class="icon"><i class="bi bi-mortarboard-fill"></i></span><span class="txt-link"> Cultura  </span></a></li>
         <li class="item-menu"><a href="../perfil/perfil.php"><span class="icon"><i class="bi bi-person-bounding-box"></i></span><span class="txt-link"> Meu Perfil </span></a></li>
     </ul>
 </nav>

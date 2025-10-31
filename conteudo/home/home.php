@@ -66,15 +66,15 @@ if ($hora >= 6 && $hora <= 12) {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../geral.css">
-    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../../header.css">
 </head>
 
 <body>
     <header class="header">
         <div class="header-container">
-            <div class="logo-area">
+           
                 <h1 class="titulo-header"> Home </h1>
-            </div>
+        
             <div class="usuario-area">
                 <span class="boas-vindas">Olá, <?php echo $nomeUsuario; ?> 👋</span>
                 <a href="../../login/logout.php" class="btn-logout">
@@ -126,8 +126,8 @@ if ($hora >= 6 && $hora <= 12) {
 
                 <li class="item-menu">
                     <a href="../flashcards/flashcards.php">
-                        <span class="icon"> <i class="bi bi-envelope-paper-fill"></i></span>
-                        <span class="txt-link"> Flashcards </span>
+                        <span class="icon"> <i class="bi bi-mortarboard-fill"></i></span>
+                        <span class="txt-link"> Cultura </span>
                     </a>
                 </li>
 

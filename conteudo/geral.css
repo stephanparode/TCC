@@ -14,7 +14,7 @@ a {
 }
 
 
-section, header {
+section {
     margin: 0 auto;
     transition: 2s;
 }
