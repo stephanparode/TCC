@@ -114,13 +114,13 @@ $nomeUsuario = $_SESSION['usuario_nome'];
                 <h1> Literatura </h1>
             </div>
             </a>
-            <a href="">
+            <a href="midias/musica.php">
              <div class="categoria" id="musica"> 
                 <i class="bi bi-music-note-beamed"></i>
                 <h1> Música </h1>
             </div>
             </a>
-            <a href="">
+            <a href="midias/artes.php">
             <div class="categoria" id="artes"> 
                 <i class="bi bi-image"></i>
                 <h1> Artes visuais </h1>

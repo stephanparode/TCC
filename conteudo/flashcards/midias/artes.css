@@ -1,0 +1,83 @@
+.section {
+    background-color: #fdfcff;
+    padding: 100px 50px;
+    color: #2e004f;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1200px;
+}
+
+.intro-artes {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+}
+
+.intro-artes h2 {
+    font-size: 2.6rem;
+    color: #5e17eb;
+    margin-bottom: 15px;
+}
+
+.intro-artes p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.periodo {
+    background: #ffffff;
+    border-left: 6px solid #7a2cff;
+    margin-bottom: 60px;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.periodo h3 {
+    color: #5e17eb;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.periodo p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.artista {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.artista img {
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+.artista .info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.artista .info h4 {
+    color: #37075e;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.artista .info p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.conclusao {
+    text-align: center;
+    max-width: 700px;
+    margin: 80px auto 40px;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #4a1d72;
+}

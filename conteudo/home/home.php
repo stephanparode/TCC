@@ -40,7 +40,7 @@ $conn->close();
 
 date_default_timezone_set('America/Sao_Paulo');
 $hora = date("H");
-$dataVestibular = new DateTime("2025-11-09");
+$dataVestibular = new DateTime("2026-11-09");
 $dataatual = new DateTime("now");
 $intervalo = $dataatual->diff($dataVestibular);
 $diasRestantes = $intervalo->days;

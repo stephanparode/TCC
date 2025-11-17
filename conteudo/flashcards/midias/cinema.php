@@ -152,14 +152,13 @@ $nomeUsuario = $_SESSION['usuario_nome'];
         <p>Explore nossa seleção de filmes clássicos, desde obras-primas do cinema nacional até referências internacionais. Navegue pelos cards abaixo e clique em cada filme para mais informações.</p>
     </div>
 </section>
-<!-- 2. Cards de Recomendações por Gênero -->
 <section class="cards-cinema">
     <h2>Recomendações </h2>
     <p>Explore nossa seleção de filmes clássicos e internacionais.</p>
     <div class="cards-container">
         <a href="https://youtu.be/qlk6ussFvUM?si=jciHoelXYIDVN4zc" target="_blank">
          <div class="card">
-            <img src="images/lawrenceposter.jpg" alt="Full Metal Jacket">
+            <img src="images/lawrenceposter.jpg" alt="Lawrende da Arábia">
             <div class="selo">Disponível</div>
             <div class="card-info">
                 <h3> Lawrence da Arábia </h3>
@@ -170,7 +169,7 @@ $nomeUsuario = $_SESSION['usuario_nome'];
 
         <a href="">
          <div class="card">
-            <img src="images/2001poster.jpg" alt="Full Metal Jacket">
+            <img src="images/2001poster.jpg" alt="2001: Uma Odisséia no Espaço">
             <div class="card-info">
                 <h3> 2001: Uma Odisséia no Espaço </h3>
                 <p>Stanley Kubrick entrega um épico de ficção científica, explorando a evolução humana, inteligência artificial e os mistérios do cosmos de maneira visualmente impressionante. </p>
@@ -180,7 +179,7 @@ $nomeUsuario = $_SESSION['usuario_nome'];
 
 
          <div class="card">
-            <img src="images/loboposter.jpg" alt="Full Metal Jacket">
+            <img src="images/loboposter.jpg" alt="O Lobo Atrás da Porta">
             
             <div class="card-info">
                 <h3> Lobo Atrás da Porta </h3>
@@ -189,7 +188,7 @@ $nomeUsuario = $_SESSION['usuario_nome'];
         </div>
          <div class="card">
             <a href="">
-            <img src="images/malcolmposter.jpg" alt="Full Metal Jacket">
+            <img src="images/malcolmposter.jpg" alt="Malcolm X">
             <div class="selo">Disponível</div>
             <div class="card-info">
                 <h3> Malcolm X </h3>

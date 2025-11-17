@@ -67,13 +67,12 @@ $nomeUsuario = $_SESSION['usuario_nome'];
 
 <div class="conteudo">
     <section class="section">
-        <!-- INTRO -->
         <div class="intro-literatura">
             <h2>Explore a Literatura Clássica</h2>
             <p>Conheça os grandes períodos literários e autores que marcaram a história, do Brasil ao mundo, priorizando obras em domínio público e essenciais para qualquer leitor.</p>
         </div>
 
-        <!-- PERÍODOS LITERÁRIOS -->
+
         <div class="periodos-container">
             <div class="periodo-card">
                 <h3>Classicismo</h3>
@@ -93,61 +92,83 @@ $nomeUsuario = $_SESSION['usuario_nome'];
             </div>
         </div>
 
-        <!-- CARDS DE LIVROS -->
+
         <div class="cards-literatura">
-            <h2>Obras Recomendadas</h2>
+            <h2>Obras Disponíveis </h2>
             <div class="cards-container">
-                <!-- Livros Internacionais -->
+
+            <a href="https://itaudeminas.mg.gov.br/arquivos/ere/livros/Dom-Quixote-Miguel-de-Cervantes.pdf" target="_blank">
                 <div class="card">
                     <div class="card-info">
+                        <img src="images/domquixote.jpg" alt="Dom Quixote">
                         <h3>Dom Quixote</h3>
                         <p>Miguel de Cervantes, romance de sátira social e aventuras cômicas.</p>
                     </div>
+            </a>
                 </div>
+            <a href="https://www.ebooksbrasil.org/adobeebook/noitesbrancas.pdf" target="_blank">
                 <div class="card">
                     <div class="card-info">
-                        <h3>Orgulho e Preconceito</h3>
-                        <p>Jane Austen, crítica social com romance e humor refinado.</p>
+                        <img src="images/noitesbrancas.jpg" alt="Noites Brancas">
+                        <h3> Noites Brancas </h3>
+                        <p> Fyodor Dostoiévski, romance melancólico que marcou época na literatura russa. </p>
                     </div>
                 </div>
+            </a>
+            <a href="https://bibliotecamundial.com.br/frankenstein-ou-o-prometeu-moderno-mary-shelley" target="_blank">
                 <div class="card">
                     <div class="card-info">
+                        <img src="images/frankenstein.jpg" alt="Frankenstein">
                         <h3>Frankenstein</h3>
                         <p>Mary Shelley, clássico de ficção científica e horror gótico.</p>
                     </div>
                 </div>
+            </a>
+            <a href="https://sites.usp.br/fabulacoesdafamiliabrasileira/wp-content/uploads/sites/1073/2022/06/Liev-Tolstoi-A-Morte-de-Ivan-Ilitch.pdf" target="_blank">
                 <div class="card">
                     <div class="card-info">
-                        <h3>Moby Dick</h3>
-                        <p>Herman Melville, épico sobre obsessão, humanidade e natureza.</p>
+                        <img src="images/ivan.jpg" alt="A Morte de Ivan Ilitch">
+                        <h3> A Morte de Ivan Ilitch </h3>
+                        <p> Lev Tolstói, romance filosófico que levanta reflexões sobre a vida e a morte. </p>
                     </div>
                 </div>
-
-                <!-- Livros Nacionais -->
+            </a>
+            <a href="https://site-antigo-2025.uffs.edu.br/institucional/reitoria/editora-uffs/repositorio-de-e-books/memorias-postuma-de-bras-cubas-pdf" target="_blank">
                 <div class="card">
                     <div class="card-info">
+                        <img src="images/brascubas.jpg" alt="Memórias Póstumas de Brás Cubas">
                         <h3>Memórias Póstumas de Brás Cubas</h3>
                         <p>Machado de Assis, romance inovador com ironia e crítica social.</p>
                     </div>
                 </div>
+            </a>
+            <a href="https://www.ebooksbrasil.org/adobeebook/policarpoE.pdf" target="_blank">
                 <div class="card">
                     <div class="card-info">
-                        <h3>O Guarani</h3>
-                        <p>José de Alencar, romance indianista que mistura aventura e romance.</p>
+                        <img src="images/policarpo.jpg" alt="Triste Fim de Policarpo Quaresma">
+                        <h3> Triste Fim de Policarpo Quaresma </h3>
+                        <p> Lima Barreto, retrato da derradeira queda do patriotismo ufanista de Policarpo. </p>
                     </div>
                 </div>
+            </a>
+            <a href="https://fundar.org.br/wp-content/uploads/2021/06/os-sertoes.pdf" target="_blank">
                 <div class="card">
                     <div class="card-info">
-                        <h3>Macunaíma</h3>
-                        <p>Mário de Andrade, Modernismo brasileiro, humor e crítica cultural.</p>
+                        <img src="images/sertoes.jpg" alt="Os Sertões">
+                        <h3> Os Sertões  </h3>
+                        <p> Euclides da Cunha, ilustração dos eventos ocorridos em Canudos durante a República Velha. </p>
                     </div>
                 </div>
+            </a>
+            <a href="http://www.culturatura.com.br/obras/iracema.pdf" target="_blank">
                 <div class="card">
                     <div class="card-info">
+                        <img src="images/iracema.jpg" alt="">
                         <h3>Iracema</h3>
                         <p>José de Alencar, romance romântico com valorização do indígena e da natureza.</p>
                     </div>
                 </div>
+            </a>
             </div>
         </div>
     </section>

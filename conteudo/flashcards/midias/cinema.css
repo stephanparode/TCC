@@ -289,6 +289,6 @@
 }
 
 .destaque-card {
-    position: relative; /* necessário para posicionar o selo */
-    text-decoration: none; /* remove underline se for link */
+    position: relative; 
+    text-decoration: none; 
 }
